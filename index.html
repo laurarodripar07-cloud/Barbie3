@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Identidad Visual de Barbie — Guía Interactiva</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600;800&family=Playfair+Display:wght@600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --barbie-pink:#E0218A;
+      --barbie-pink-2:#FF5BBE;
+      --barbie-pink-3:#FF8AD6;
+      --barbie-magenta:#C6007E;
+      --barbie-black:#111;
+      --barbie-white:#fff;
+      --ink:#2b2b2b;
+      --bg:#fff8fd;
+      --card:#ffffff;
+      --shadow:0 10px 30px rgba(0,0,0,.08);
+      --radius:18px;
+      --radius-lg:28px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0}
+    body{
+      font-family:Poppins, sans-serif;
+      color:var(--ink);
+      background:var(--bg);
+      line-height:1.6;
+      overflow-x:hidden;
+    }
+    header{position:sticky;top:0;background:#fff7fb;box-shadow:0 2px 8px rgba(0,0,0,.08);z-index:100}
+    .nav{max-width:1200px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:12px 20px}
+    .brand{font-family:Pacifico,cursive;font-size:30px;color:var(--barbie-pink)}
+    section{max-width:1200px;margin:40px auto;padding:0 20px}
+    h2{font-family:"Playfair Display",serif;font-size:34px;color:var(--barbie-pink)}
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+    .card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:18px;transition:.4s;opacity:0;transform:translateY(30px)}
+    .card.visible{opacity:1;transform:translateY(0)}
+    .card:hover{transform:translateY(-4px) scale(1.02)}
+    .iconos{display:flex;gap:20px;flex-wrap:wrap;margin-top:20px}
+    .icono{flex:1 1 160px;text-align:center;padding:16px;border-radius:var(--radius);box-shadow:var(--shadow);background:#fff;transition:.4s;opacity:0;transform:scale(.9)}
+    .icono.visible{opacity:1;transform:scale(1)}
+    .icono:hover{background:var(--barbie-pink-3);color:#fff}
+    .icono img{width:80px;height:80px;object-fit:contain;margin-bottom:8px}
+    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:24px;align-items:center;margin-top:20px}
+    .hero-card{background:linear-gradient(135deg,var(--barbie-pink),var(--barbie-pink-2));border-radius:var(--radius-lg);color:#fff;padding:46px;box-shadow:0 20px 60px rgba(224,33,138,.35);opacity:0;transform:translateX(-40px);transition:.6s}
+    .hero-card.visible{opacity:1;transform:translateX(0)}
+    .hero h1{font-family:"Playfair Display",serif;font-size:46px;margin:0 0 10px}
+    .timeline{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(220px,1fr);gap:16px;overflow:auto;padding:10px 0}
+    .t-card{background:#fff;border-radius:14px;padding:14px;box-shadow:var(--shadow);opacity:0;transform:translateY(30px);transition:.5s}
+    .t-card.visible{opacity:1;transform:translateY(0)}
+    .t-year{font-weight:800;color:var(--barbie-magenta)}
+    footer{max-width:1200px;margin:40px auto;padding:20px;color:#7a5771;text-align:center}
+    .float{position:fixed;right:16px;bottom:16px;border:0;border-radius:999px;padding:12px 14px;background:var(--barbie-pink);color:#fff;cursor:pointer;box-shadow:var(--shadow);transition:.3s}
+    .float:hover{background:var(--barbie-magenta)}
+    @media(max-width:880px){.hero{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <div class="brand">Barbie</div>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-card">
+        <h1>Identidad Visual de Barbie</h1>
+        <p>Los elementos visuales de Barbie transmiten estilo, feminidad y empoderamiento. Cada detalle —desde el color rosa hasta los accesorios icónicos— forma parte de su imagen cultural.</p>
+      </div>
+      <div>
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/24/Barbie_Logo.svg/512px-Barbie_Logo.svg.png" alt="Logo de Barbie" style="max-width:100%;border-radius:20px;box-shadow:var(--shadow)">
+      </div>
+    </section>
+
+    <section>
+      <h2>1) Color</h2>
+      <div class="cards">
+        <div class="card">El <b>rosa Barbie</b> (#E0218A) es un símbolo universal de la marca, asociado con feminidad, alegría y estilo glamuroso.</div>
+        <div class="card">Los tonos de acento (#FF5BBE y #FF8AD6) aportan dinamismo y frescura a sus campañas y productos.</div>
+        <div class="card">El contraste con blanco y negro ayuda a resaltar el rosa, garantizando visibilidad en envases y anuncios.</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>2) Logotipo</h2>
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/en/2/24/Barbie_Logo.svg" alt="Logo oficial" style="width:200px">
+        <p>El logotipo en tipografía <i>script</i> refleja cercanía, feminidad y diversión. Se recomienda usarlo en rosa corporativo sobre fondo claro para mayor impacto visual.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>3) Tipografía</h2>
+      <div class="cards">
+        <div class="card" style="font-family:'Playfair Display',serif;font-size:22px">Los <b>titulares</b> suelen usar tipografías elegantes que transmiten aspiración y sofisticación.</div>
+        <div class="card" style="font-family:Poppins,sans-serif;font-size:16px">Los <b>textos base</b> emplean tipografías modernas y legibles, reforzando el tono juvenil y cercano de la marca.</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>4) Packaging</h2>
+      <div class="card">
+        <img src="https://i.pinimg.com/originals/4e/2c/c5/4e2cc5816b9db0a06c881c34e65e0732.jpg" alt="Ejemplo de caja Barbie" style="max-width:100%;border-radius:14px">
+        <p>Las cajas de Barbie destacan por su <b>ventana transparente</b> que permite ver la muñeca, reforzando la idea de aspiración. El color rosa domina, junto a ilustraciones llamativas y tipografía juvenil.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>5) Elementos icónicos</h2>
+      <div class="iconos">
+        <div class="icono"><img src="https://cdn-icons-png.flaticon.com/512/744/744922.png" alt="Cepillo"><p><b>Cepillo:</b> simboliza el cuidado personal y la importancia de la moda y el peinado en el universo Barbie.</p></div>
+        <div class="icono"><img src="https://cdn-icons-png.flaticon.com/512/2977/2977874.png" alt="Bolso"><p><b>Bolso:</b> accesorio clásico que representa estilo, independencia y sofisticación.</p></div>
+        <div class="icono"><img src="https://cdn-icons-png.flaticon.com/512/3069/3069170.png" alt="Tacones"><p><b>Tacones:</b> evocan glamour y el lado fashionista de Barbie en la cultura pop.</p></div>
+        <div class="icono"><img src="https://cdn-icons-png.flaticon.com/512/609/609803.png" alt="Espejo"><p><b>Espejo:</b> simboliza la autoexpresión, la belleza y la creatividad personal.</p></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>6) Hitos históricos</h2>
+      <div class="timeline">
+        <div class="t-card"><div class="t-year">1959</div><div>Nace Barbie con un estilo inspirado en la moda de la época.</div></div>
+        <div class="t-card"><div class="t-year">1965</div><div>Primera Barbie astronauta, mostrando aspiración y empoderamiento.</div></div>
+        <div class="t-card"><div class="t-year">1980</div><div>Se introducen muñecas de distintas etnias, fomentando inclusión.</div></div>
+        <div class="t-card"><div class="t-year">2016</div><div>Lanzamiento de nuevas siluetas y diversidad de cuerpos.</div></div>
+        <div class="t-card"><div class="t-year">2023</div><div>La película Barbie se convierte en fenómeno cultural y visual global.</div></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p><small>Guía educativa inspirada en Barbie. “Barbie” es una marca registrada de Mattel. No oficial.</small></p>
+  </footer>
+  <button class="float" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+  <script>
+    const observer=new IntersectionObserver(entries=>{
+      entries.forEach(entry=>{
+        if(entry.isIntersecting){
+          entry.target.classList.add('visible');
+        }
+      });
+    },{threshold:.2});
+
+    document.querySelectorAll('.card, .icono, .hero-card, .t-card').forEach(el=>observer.observe(el));
+  </script>
+</body>
+</html>
